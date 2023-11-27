@@ -8,7 +8,7 @@ describe("shuffle should...", () => {
     expect(Array.isArray(result)).toBe(true)
   })
 
-  test("return an array of the same length", () => {
+  test("not be equal to the shuffled array", () => {
     const arr = [1,2,3,4,5];
     const result = shuffle(arr);
     expect(result).not.toEqual(arr)

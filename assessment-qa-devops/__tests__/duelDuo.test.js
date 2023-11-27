@@ -1,9 +1,9 @@
-const { Builder, Browser, By, until } = require("selenium-webdriver");
+const { Builder, By, Key, until } = require("selenium-webdriver");
 
 let driver;
 
 beforeEach(async () => {
-  driver = await new Builder().forBrowser(Browser.CHROME).build();
+  driver = await new Builder().forBrowser("chrome").build();
 });
 
 afterEach(async () => {
